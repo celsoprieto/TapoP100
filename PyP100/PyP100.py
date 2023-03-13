@@ -145,7 +145,7 @@ class P100():
 				"password": self.encodedPassword,
 				"username": self.encodedEmail
 			},
-			"requestTimeMils": 0,
+			"requestTimeMils":  int(round(time.time() * 1000)),
 		}
 		headers = {
 			"Cookie": self.cookie
